@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 
-3. Open your browser at `http://localhost:3000`
+3. Open your browser at `http://localhost:5000`
 
 ## Deployment
 
