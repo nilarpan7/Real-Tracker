@@ -18,7 +18,7 @@ if(navigator.geolocation){
     );
 }
 
-const map = L.map('map').setView([0, 0], 10);
+const map = L.map('map').setView([0, 0], 20);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: "Nilarpan Tech"
@@ -35,7 +35,7 @@ socket.on('Receive-location', (data) => {
             .bindPopup(`User: ${id}`).openPopup();
         // Only center map on first marker or when it's your own location
         if(Object.keys(marker).length === 1){
-            map.setView([latitude, longitude], 13);
+            map.setView([latitude, longitude], 20);
         }
     }
 });
